@@ -1,13 +1,13 @@
 interface Props {
   title: string;
   className?: any;
-  onClick?: () => void;
+  funcName?: () => void;
 }
 
-export const CustomButton = ({ title, className, onClick }: Props) => {
+export const CustomButton = ({ title, className, funcName }: Props) => {
   return (
     <>
-      <button onClick={onClick} className={className} type="submit">
+      <button onClick={funcName} className={className} type="submit">
         {title}
       </button>
     </>
